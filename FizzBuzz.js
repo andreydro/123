@@ -2,15 +2,20 @@ function log(a) { console.log(a); }
 
 var a;
 for (a = 1; a < 101; a++) {
-  if (a % 3 === 0 && a % 5 === 0 ) {
+  while (a % 3 === 0 && a % 5 === 0 ) {
     log("FizzBuzz");
+    break;
   }
-  else if (a % 5 === 0) {
+  while (a % 5 === 0) {
     log("Buzz");
+    break;
   }
-  else if (a % 3 === 0) {
+  while (a % 3 === 0) {
     log("Fizz");
+    break;
   }
-  else
+  while (a % 3 != 0 && a % 5 != 0) {
     log(a);
+    break;
+  }
 }

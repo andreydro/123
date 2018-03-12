@@ -15,14 +15,7 @@ isPalindrom("ASasdasd");
 
 // the same task in less then 50 symbols (in progress...)
 
-function isPalindrom(str) {
- var originalStr = str;
- var reversedStr = str.split("").reverse().join("");
- if(reversedStr == originalStr) {
-    return true;
-    } else if (originalStr === ""){
-    return true;
-    } else {
-    return false;
-    }
+function isPalindrom(s) {
+ var r = s.split("").reverse().join("");
+ return r == s || s == "" ? true : false;
 }
