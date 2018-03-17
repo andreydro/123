@@ -33,11 +33,6 @@ function getChange(itemCost, moneyPaid) {
       result += ' '
     }
   }
-  // var string = "2.3" 
-  // var fraction = string.split(".");
-  // var integer = Number(fraction[1])
-  // getChange(3, 3.22)
-  // "0 x roubles; 1 x 20 cents; 2 x 1 cents; "
   
   return result
 }
