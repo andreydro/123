@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/2.1.0/mocha.js"></script>
+    <script>
+    mocha.setup('bdd');
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/2.0.0/chai.js"></script>
+    <script>
+    var assert = chai.assert;
+    </script>
+</head>
+
+<body>
+    <script>
+    function isFloat(n) {
+        return Number(n) === n && n % 1 !== 0;
+    }
+
+    function pow(x, n) {
+        var result = 1;
+
+        for (var i = 0; i < n; i++) {
+            result *= x;
+        }
+        if (n < 0) {
+            return NaN;
+        } else if (x == 0 && n == 0) {
+            return NaN;
+        } else if (isFloat(n)) {
+            return NaN;
+        } else if ( n == 0 && x > 0) {
+           return 1;
+        } else {
+          return result;
+        }
+    }
+    </script>
+    <script src="tests.js"></script>
+    <div id="mocha"></div>
+    <script>
+    mocha.run();
+    </script>
+</body>
+
+</html>
