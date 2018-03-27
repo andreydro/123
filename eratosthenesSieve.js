@@ -7,7 +7,6 @@ while (n <= 100) {
 
 var p = 2;
 while (Math.pow(p, 2) < 100) {
-
     for (var i = 1; i < 100; i++) {
         if (array[i] % p == 0) {
             delete array[i];
