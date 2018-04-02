@@ -1,16 +1,16 @@
-var calculator = {
-	sum: function() {
-		return this.a + this.b;
-	},
-	mul: function() {
-		return this.a * this.b;
-	},
-	read: function() {
+function Calculator() {
+	this.read = function() {
 		this.a = +prompt("a?", 0);
 		this.b = +prompt("b?", 0);
 	}
+	this.sum = function() {
+		return this.a + this.b;
+	},
+	this.mul = function() {
+		return this.a * this.b;
+	};
 }
-
+var calculator = new Calculator();
 calculator.read();
-console.log(calculator.sum());
-console.log(calculator.mul());
+console.log("Sum: " + calculator.sum());
+console.log("Multi: " + calculator.mul());
