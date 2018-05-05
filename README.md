@@ -10,3 +10,4 @@ Solving JavaScript tasks while going through the course https://github.com/vvsco
 8. camelize function - done
 9. checkSpam function - done
 10. eratosthenesSieve function - done
+11. Cooming soon...
