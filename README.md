@@ -1,5 +1,7 @@
 Solving JavaScript tasks while going through the course https://github.com/vvscode/js--base-course 
 
+And reading book http://learn.javascript.ru/
+
 1. FizzBuzz function - done
 2. isPalindrom function - done
 3. Accumulator function - done
