@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+  <div id="container"></div>
+
+  <script>
+  	var data = {
+  		"Fish": {
+  			"Forel": {},
+  			"Shuka": {}
+  		},
+  		"Trees": {
+  			"Hvoinie": {
+  				"LIsvenica": {},
+  				"El": {}
+  			},
+  			"Cvetkovie": {
+  				"Bereza": {},
+  				"Topol": {}
+  			}
+  		}
+  	};
+
+  	function createTree(container, obj) {
+  		container.innerHTML = createTreeText(obj);
+  	}
+
+  	function createTreeText(obj) {
+  		var li = '';
+  		for (var key in obj) {
+  			li += '<li>' + key + createTreeText(obj[key]) + '</li>';
+  		}
+  		if (li) {
+  			var ul = '<ul>' + li + '</ul>'
+  		}
+  		return ul || '';
+  	}
+
+  	var container = document.getElementById('container');
+  	createTree(container, data);
+  </script>
+</body>
+</html>

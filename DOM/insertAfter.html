@@ -1,0 +1,17 @@
+<div>These</div>
+<div>Elements</div>
+
+<script>
+	var elem = document.createElement('div');
+	elem.innerHTML = '<b>New element</b>';
+
+	function insertAfter(elem, refElem) {
+    return refElem.parentNode.insertBEfore(elem, refElem.nextSibling);
+	}
+
+	var body = ducument.body;
+
+	insertAfter(elem, body.firstChild);
+
+	insertAfter(elem, body.lastChild);
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+  <h1>List creation</h1>
+
+  <script>
+  	var ul = document.createElement('ul');
+  	document.body.appendChild(ul);
+
+  	while (true) {
+  		var data = prompt("Insert text for point of list", "");
+
+  		if (!data) {
+  			break;
+  		}
+
+  		var li = document.createElement('li');
+  		li.appendChild(document.createTextNode(data));
+  		ul.appendChild(li);
+  	}
+  </script>
+</body>
+</html>

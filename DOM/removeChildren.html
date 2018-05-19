@@ -1,0 +1,23 @@
+<table id="table">
+  <tr>
+    <td>Those</td>
+    <td>are</td>
+    <td>DOM's elements</td>
+  </tr>
+</table>
+
+<ol id="ol">
+  <li>Vasya</li>
+  <li>Petya</li>
+  <li>Masha</li>
+  <li>Dasha</li>
+</ol>
+
+<script>
+  function removeChildren(elem) {
+  elem.innerHTML = '';
+  }
+
+  removeChildren(table);
+  removeChildren(ol);
+</script>

@@ -1,0 +1,17 @@
+<div>Those</div>
+<div>are</div>
+<div>DOM's elements</div>
+
+<script>
+	if (!Element.prototype.remove) {
+		Element.prototype.remove= function remove() {
+			if (this.perentNode) {
+				this.parentNode.removeChild(this);
+			}
+		};
+	}
+
+	var elem = document.body.children[0];
+
+	elem.remove();
+</script>

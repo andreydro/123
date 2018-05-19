@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+</head>
+<body>
+  <ul>
+  	<li>Animals
+  		<ul>
+  			<li>Mlekopitaushiesya
+  				<ul>
+  					<li>Cows</li>
+  					<li>Donkey</li>
+  					<li>Dogs</li>
+  					<li>Tigers</li>
+  				</ul>
+  			</li>
+  			<li>Others
+  				<ul>
+  					<li>Snakes</li>
+  					<li>Birds</li>
+  					<li>LIzards</li>
+  				</ul>
+  			</li>
+  		</ul>
+  	</li>
+  	<li>Fishes
+		  <ul>
+		  	<li>From aquarium
+		  		<ul>
+		  			<li>Guuppi</li>
+		  			<li>Skalarii</li>
+		  		</ul>
+		  	</li>
+		  	<li>From sea
+		  		<ul>
+		  			<li>Trout</li>
+		  		</ul>
+		  	</li>
+		  </ul>
+  	</li>
+  </ul>
+
+  <script>
+  	var lis = document.getElementsByTagName('li');
+
+  	for (i = 0; i < lis.length; i++) {
+  		var childCount = lis[i].getElementsByTagName('li').length;
+  		if (!childCount) continue;
+
+  		lis[i].firstChild.data += ' [' + childCount + ']';
+  	}
+  </script>
+</body>
+</html>
