@@ -4,7 +4,7 @@
 
 Виды циклов ( 3 вида )? Примеры использования   - while (условие){тело}; do {тело} while (условие); for(начало, условие, шаг){тело};
 
-Сколько и какие типы данных в javascript? Примеры создания переменных каждого типа   -6 типов: string(""), number(1), object(null,{}), undefined, boolean(true), function
+Сколько и какие типы данных в javascript? Примеры создания переменных каждого типа   -7 типов: string(""), number(1), object(null,{}), undefined, boolean(true), null, symbol
 
 Как узнать тип переменной? Пример кода  - typeof "line" // "string"
 
