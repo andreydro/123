@@ -12,4 +12,8 @@ And reading book http://learn.javascript.ru/
 8. camelize function - done
 9. checkSpam function - done
 10. eratosthenesSieve function - done
-11. Cooming soon...
+11. getDecimal - done
+12. getLastDayOfMonth - done
+13. getLocalDay
+14. getSecondsToTomorrow
+15. getSecondsToday
