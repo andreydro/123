@@ -1,0 +1,38 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+  margin: 2em;
+}
+
+h1 {
+  font-style: italic;
+  color: #373fff;
+}
+
+#main-box {
+  border:1px solid black;
+  height: 400px;
+  position: relative;
+}
+
+#yellow-box {
+  border: 1px solid black;
+  background: yellow;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  width: 10px;
+  height: 15px;
+}
+
+#red-box {
+  border:1px solid black;
+  background: red;
+  position: absolute;
+  opacity: 0.5;
+  top: 40px;
+  left: 55px;
+  width: 20px;
+  height: 20px;
+}
