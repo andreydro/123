@@ -1,50 +1,47 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta name="description" content="[mocha template]">
-<meta charset="utf-8">
-  <link rel="stylesheet" href="style.css" />
-  </head>
-<body>  
+    <meta name="description" content="[mocha template]">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-  <div id="main-box">
-    <div class="box" id="yellow-box">
-    
+<body>
+    <div id="main-box">
+        <div class="box" id="yellow-box"></div>
+        <div class="box" id="red-box"></div>
     </div>
-    <div class="box" id="red-box">
-    
-    </div>
-  </div>
-  <fieldset>
-    <label>
-      <input type="number" id="x-yellow" value="30">x-yellow
-    </label>
-    <label>
-      <input type="number" id="y-yellow" value="20">y-yellow
-    </label>
-    <label>
-      <input type="number" id="h-yellow" value="20">h-yellow
-    </label>
-    <label>
-      <input type="number" id="w-yellow" value="30">w-yellow
-    </label>
-  </fieldset>
-  <fieldset>
-    <label>
-      <input type="number" id="x-red" value="30">x-red
-    </label>
-    <label>
-      <input type="number" id="y-red" value="20">y-red
-    </label>
-    <label>
-      <input type="number" id="h-red" value="20">h-red
-    </label>
-    <label>
-      <input type="number" id="w-red" value="30">w-red
-    </label>
-  </fieldset>
+    <fieldset class="field yellow">
+        <label>
+            <input type="number" class="x" value="150">x-yellow
+        </label>
+        <label>
+            <input type="number" class="y" value="150">y-yellow
+        </label>
+        <label>
+            <input type="number" class="h" value="100">h-yellow
+        </label>
+        <label>
+            <input type="number" class="w" value="100">w-yellow
+        </label>
+    </fieldset>
+    <fieldset class="field red">
+        <label>
+            <input type="number" class="x" value="400">x-red
+        </label>
+        <label>
+            <input type="number" class="y" value="150">y-red
+        </label>
+        <label>
+            <input type="number" class="h" value="100">h-red
+        </label>
+        <label>
+            <input type="number" class="w" value="100">w-red
+        </label>
+    </fieldset>
+    <div class="trafficlight"></div>
+    <script src="./script.js"></script>
+</body>
 
-  <script src="script.js"></script>
-
-</body>  
 </html>

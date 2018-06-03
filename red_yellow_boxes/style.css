@@ -1,38 +1,43 @@
-/* CSS files add styling rules to your content */
-
 body {
-  font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
-  margin: 2em;
+    font-family: "Benton Sans", "Helvetica Neue", helvetica, arial, sans-serif;
+    margin: 2em;
 }
 
 h1 {
-  font-style: italic;
-  color: #373fff;
+    font-style: italic;
+    color: #373fff;
 }
 
 #main-box {
-  border:1px solid black;
-  height: 400px;
-  position: relative;
+    border: 1px solid black;
+    height: 400px;
 }
 
-#yellow-box {
-  border: 1px solid black;
-  background: yellow;
-  position: absolute;
-  top: 30px;
-  left: 50px;
-  width: 10px;
-  height: 15px;
+#yellow-box,
+#red-box {
+    border: 1px solid black;
+    background: yellow;
+    position: absolute;
 }
 
 #red-box {
-  border:1px solid black;
-  background: red;
-  position: absolute;
-  opacity: 0.5;
-  top: 40px;
-  left: 55px;
-  width: 20px;
-  height: 20px;
+    background: #f00;
+    opacity: 0.5;
+}
+
+.zIndex {
+    z-index: 100;
+}
+
+.trafficlight {
+    border: 1px solid black;
+    background: #0f0;
+    display: inline-block;
+    margin: 1em 40%;
+    width: 20%;
+    height: 2em;
+}
+
+.redColor {
+    background: #f00;
 }

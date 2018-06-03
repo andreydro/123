@@ -1,87 +1,96 @@
+const checkCross = arr => {
+    arr.forEach(box => {
+        const { top, left, right, bottom } = box.getBoundingClientRect();
+        arr.forEach(anyBox => {
+            if (box === anyBox) return;
+            const coord = anyBox.getBoundingClientRect();
+            if (
+                bottom < coord.top ||
+                top > coord.bottom ||
+                (right < coord.left || left > coord.right)
+            ) {
+                document.querySelector(".trafficlight").classList.remove("redColor");
+            } else {
+                document.querySelector(".trafficlight").classList.add("redColor");
+            }
+        });
+    });
+};
 
-function detectIntersection(p1, p2) {
-  if (p1.x == p2.x || p1.y == p2.y || p1.w == p2.w && p1.h == p2.h) {
-    if (p1.x > p2.w || p1.y > p2.h) {
-      return false
-    } else {
-      return true
-    }
-  } else {
-    if (p1.x !== p2.x && p1.y !== p2.y && p1.w !== p2.w && p1.h !== p2.h) {
-      return true
-    } else {
-      return false
-    }
-  }
-}
+const updatePosition = () => {
+    const { left, top, right, bottom } = document
+        .querySelector("#main-box")
+        .getBoundingClientRect();
+    document.querySelectorAll(".field").forEach((field, index) => {
+        const box = document.querySelectorAll(".box")[index];
+        if (+field.querySelector(".x").value < left)
+            field.querySelector(".x").value = left;
+        if (+field.querySelector(".x").value >
+            right - field.querySelector(".w").value
+        )
+            field.querySelector(".x").value = right - field.querySelector(".w").value;
+        if (+field.querySelector(".y").value < top)
+            field.querySelector(".y").value = top;
+        if (+field.querySelector(".y").value >
+            bottom - field.querySelector(".h").value
+        )
+            field.querySelector(".y").value =
+            bottom - field.querySelector(".h").value;
+        box.style.left = +field.querySelector(".x").value + "px";
+        box.style.top = +field.querySelector(".y").value + "px";
+        box.style.width = +field.querySelector(".w").value + "px";
+        box.style.height = +field.querySelector(".h").value + "px";
+    });
+    checkCross(document.querySelectorAll(".box"));
+};
 
-var mainBox = document.querySelector("#main-box");
-
-document.querySelectorAll("fieldset")[0].addEventListener("change", function(e) {
-  var box = document.querySelector("#yellow-box");
-  if (e.target.id == "x-yellow"){
-    box.style.left = e.target.value + "px";
-  }
-  if (e.target.id == "y-yellow"){
-    box.style.top = e.target.value + "px";
-  }
-  if (e.target.id == "w-yellow"){
-    box.style.width = e.target.value + "px";
-  }
-  if (e.target.id == "h-yellow"){
-    box.style.height = e.target.value + "px";
-  }
+document.querySelectorAll(".field").forEach(field => {
+    field.addEventListener("change", e => {
+        updatePosition();
+    });
 });
 
-document.querySelectorAll("fieldset")[1].addEventListener("change", function(e) {
-  var box = document.querySelector("#red-box");
-  if (e.target.id == "x-red"){
-    box.style.left = e.target.value + "px";
-  }
-  if (e.target.id == "y-red"){
-    box.style.top = e.target.value + "px";
-  }
-  if (e.target.id == "w-red"){
-    box.style.width = e.target.value + "px";
-  }
-  if (e.target.id == "h-red"){
-    box.style.height = e.target.value + "px";
-  }
+const move = (e, elem, index, offsetX, offsetY, limits) => {
+    const { width, height } = elem.getBoundingClientRect();
+    let x = e.clientX - offsetX;
+    let y = e.clientY - offsetY;
+    x =
+        x < limits.left ?
+        limits.left :
+        x > limits.right - width ?
+        limits.right - width :
+        x;
+    y =
+        y < limits.top ?
+        limits.top :
+        y > limits.bottom - height ?
+        limits.bottom - height :
+        y;
+    document
+        .querySelectorAll(".field")[index].querySelectorAll("input")
+        .forEach(el => {
+            if (el.className === "x") el.value = x;
+            if (el.className === "y") el.value = y;
+        });
+    updatePosition();
+};
+
+document.querySelectorAll(".box").forEach((box, i, arr) => {
+    box.addEventListener("mousedown", e => {
+        const offsetX = e.clientX - box.getBoundingClientRect().left;
+        const offsetY = e.clientY - box.getBoundingClientRect().top;
+        const limits = document.querySelector("#main-box").getBoundingClientRect();
+        arr.forEach(el => {
+            el === box ? el.classList.add("zIndex") : el.classList.remove("zIndex");
+        });
+        document.body.onmousemove = e => {
+            move(e, box, i, offsetX, offsetY, limits);
+            checkCross(arr);
+        };
+    });
+    document.body.addEventListener("mouseup", _ => {
+        document.body.onmousemove = null;
+    });
 });
 
-var redBox = document.getElementById("red-box");
-
-function move(e) {
-  redBox.style.top = e.clientY + "px";
-  redBox.style.left = e.clientX + "px";
-}
-
-redBox.addEventListener("mousedown", function(e) {
-  mainBox.addEventListener("mousemove", move)
-})
-
-redBox.addEventListener("mouseup", function(e) {
-  mainBox.removeEventListener("mousemove", move)
-})
-
-// function move(e) {
-//   console.log(e);
-//   e.style.left = clientX + "px";
-//   e.style.top = clientY + "px";
-// }
-
-// document.querySelectorAll(".box").forEach(box => {
-//   box.addEventListener("mousedown", function(e) {
-//     //if (e.target == box) {
-//       // const cordinate = box.getBoundingClientRect();
-//       // var x = e.clientX;
-//       // var y = e.clientY;
-//       mainBox.addEventListener("mousemove", move)
-//     //}
-//   })
-
-//   box.addEventListener("mouseup", function(e) {
-//     mainBox.removeEventListener("mousemove", move)
-//   })
-// })
-
+updatePosition();
