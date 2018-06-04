@@ -2,6 +2,8 @@ Solving JavaScript tasks while going through the course https://github.com/vvsco
 
 And reading book http://learn.javascript.ru/
 
++ gulp setup
+
 1. FizzBuzz function - done
 2. isPalindrom function - done
 3. Accumulator function - done
@@ -17,3 +19,8 @@ And reading book http://learn.javascript.ru/
 13. getLocalDay
 14. getSecondsToTomorrow
 15. getSecondsToday
+16. getSums
+17. getWeekDay
+18. isEmpty
+19. isPlaindrom
+20. makeArmy
