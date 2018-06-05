@@ -24,3 +24,13 @@ And reading book http://learn.javascript.ru/
 18. isEmpty
 19. isPlaindrom
 20. makeArmy
+21. makeBuffer
+22. makeCahing
+23. makeCounter
+24. makeLogging
+25. makeLogging2
+26. multiplyNumeric
+27. options
+28. printNumbersInterval
+29. printNumbersTimeout
+30. proto
