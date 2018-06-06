@@ -34,3 +34,10 @@ And reading book http://learn.javascript.ru/
 28. printNumbersInterval
 29. printNumbersTimeout
 30. proto
+31. removeClass
+32. small_pieces
+33. sum
+34. sunArgs
+35. throttle
+36. truncate
+37. ucFirst
