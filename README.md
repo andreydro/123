@@ -16,28 +16,28 @@ And reading book http://learn.javascript.ru/
 10. eratosthenesSieve function - done
 11. getDecimal - done
 12. getLastDayOfMonth - done
-13. getLocalDay
-14. getSecondsToTomorrow
-15. getSecondsToday
-16. getSums
-17. getWeekDay
-18. isEmpty
-19. isPlaindrom
-20. makeArmy
-21. makeBuffer
-22. makeCahing
-23. makeCounter
-24. makeLogging
-25. makeLogging2
-26. multiplyNumeric
-27. options
-28. printNumbersInterval
-29. printNumbersTimeout
-30. proto
-31. removeClass
-32. small_pieces
-33. sum
-34. sunArgs
-35. throttle
-36. truncate
-37. ucFirst
+13. getLocalDay - done
+14. getSecondsToTomorrow - done
+15. getSecondsToday - done
+16. getSums - done
+17. getWeekDay - done
+18. isEmpty - done
+19. isPlaindrom - done
+20. makeArmy - done
+21. makeBuffer - done
+22. makeCahing - done
+23. makeCounter - done
+24. makeLogging - done
+25. makeLogging2 - done
+26. multiplyNumeric - done
+27. options - done
+28. printNumbersInterval - done
+29. printNumbersTimeout - done
+30. proto - done
+31. removeClass - done
+32. small_pieces - done
+33. sum - done
+34. sunArgs - done
+35. throttle - done
+36. truncate - done
+37. ucFirst - done
