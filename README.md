@@ -3,6 +3,8 @@ Solving JavaScript tasks while going through the course https://github.com/vvsco
 And reading book http://learn.javascript.ru/
 
 + gulp setup
++ red_yellow_boxes
++ funFunFunction
 
 1. FizzBuzz function - done
 2. isPalindrom function - done
