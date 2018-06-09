@@ -6,11 +6,11 @@ And reading book http://learn.javascript.ru/
 + red_yellow_boxes
 + funFunFunction
 
-1. FizzBuzz function - done
+1. fizzBuzz function - done
 2. isPalindrom function - done
-3. Accumulator function - done
-4. AddClass function - done
-5. Filter function - done
+3. accumulator function - done
+4. addClass function - done
+5. filter function - done
 6. compareAge function - done
 7. byField function - done
 8. camelize function - done
