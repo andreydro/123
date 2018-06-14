@@ -43,3 +43,5 @@ And reading book http://learn.javascript.ru/
 35. throttle - done
 36. truncate - done
 37. ucFirst - done
+38. fetch - done
+39. fetchWithPOST - done
