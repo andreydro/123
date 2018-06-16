@@ -45,3 +45,5 @@ And reading book http://learn.javascript.ru/
 37. ucFirst - done
 38. fetch - done
 39. fetchWithPOST - done
+40. ajaxGetRequest - done
+41. ajaxPostRequest - done
