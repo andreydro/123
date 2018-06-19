@@ -5,6 +5,8 @@ And reading book http://learn.javascript.ru/
 + gulp setup
 + red_yellow_boxes
 + funFunFunction
++ barley_break_game
++ life_game
 
 1. fizzBuzz function - done
 2. isPalindrom function - done
