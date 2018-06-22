@@ -1,6 +1,3 @@
-conscious-glazer
-ShowLive
-
 
 function HashRouter(options) {
   options = options || {};
@@ -10,7 +7,7 @@ function HashRouter(options) {
     this.handleUrl(getHash());
   }.bind(this));
 }
-​
+
 HashRouter.prototype = {
   handleUrl: function(url) {
     var routes = this.routes || [];
@@ -42,17 +39,9 @@ HashRouter.prototype = {
   },
 }
 ​
-​
 function getHash() {
   return decodeURI(window.location.hash).slice(1);
 }
-​
-​
-​
-​
-​
-​
-// -----------------------
 ​
 function findRoute(routeList, url) {
   var result = [null, null];
