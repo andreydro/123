@@ -1,0 +1,44 @@
+
+#app {
+  display: block;
+  margin: 50px ;
+  width: 400px;
+  
+}
+#button {
+  width: 23%;
+  display: inline-block;
+}
+input {
+  width: 73%;
+  display: inline-block;
+}
+header {
+  width: 100%;
+  background-color: blue;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+p {
+  width: 150px;
+  height: 50px;
+  overflow: auto;
+}
+
+.red {
+  border: 3px solid red;
+}
+
+.blue {
+  border: 3px solid blue;
+}
+
+.green {
+  border: 3px solid green;
+}
+
+.task {
+  margin-top:5px;
+  border-radius: 5px;
+}
