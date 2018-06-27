@@ -7,6 +7,7 @@ And reading book http://learn.javascript.ru/
 + funFunFunction
 + barley_break_game
 + life_game
++ router
 
 1. fizzBuzz function - done
 2. isPalindrom function - done
