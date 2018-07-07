@@ -46,7 +46,7 @@ function getHash() {
 function findRoute(routeList, url) {
   var result = [null, null];
   routeList.forEach(function(route) {
-    if(result[0]) { return; } // если роут уже нашли - остальное не проверяем
+    if(result[0]) { return; }
     if(route.match === url) {
        result = [route, url];
     } else if(route.match instanceof RegExp && route.match.test(url)) {

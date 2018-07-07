@@ -6,7 +6,7 @@ And reading book http://learn.javascript.ru/
 + red_yellow_boxes game
 + funFunFunction youtube channel
 + barley_break_game
-+ life_game
++ life_game (canvas is coming)
 + custom router
 
 1. fizzBuzz function - done
