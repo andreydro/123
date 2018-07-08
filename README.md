@@ -7,7 +7,7 @@ And reading book http://learn.javascript.ru/
 + funFunFunction youtube channel
 + barley_break_game
 + life_game (canvas is coming)
-+ custom router
++ custom router (can be used a lot of times)
 
 1. fizzBuzz function - done
 2. isPalindrom function - done
