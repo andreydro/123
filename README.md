@@ -5,7 +5,7 @@ And reading book http://learn.javascript.ru/
 + gulp (setup)
 + red_yellow_boxes game
 + funFunFunction youtube channel
-+ barley_break_game
++ barley_break_game (can be modified and added as a hometask)
 + life_game (canvas is coming)
 + custom router (can be used a lot of times)
 
