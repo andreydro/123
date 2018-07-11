@@ -2,7 +2,7 @@ Solving JavaScript tasks while going through the course https://github.com/vvsco
 
 And reading book http://learn.javascript.ru/
 
-+ gulp (setup)
++ gulp (setup with 3 files)
 + red_yellow_boxes game
 + funFunFunction youtube channel
 + barley_break_game (can be modified and added as a hometask)
