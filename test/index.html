@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Test</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container" id="main-container">
+        <div class="block">1</div>
+        <div class="block" id="block2">
+            2
+            <div class="slideshow-container" id="slideshow-container">
+                <div class="slides fade" id="slide1">
+                    <a class="remove" onclick="removeSlide(1)">X</a>
+                    <div class="text">TEXT 1</div>
+                </div>
+                <div class="slides fade" id="slide2">
+                    <a class="remove" onclick="removeSlide(2)">X</a>
+                    <div class="text">TEXT 2</div>
+                </div>
+                <div class="slides fade" id="slide3">
+                    <a class="remove" onclick="removeSlide(3)">X</a>
+                    <div class="text">TEXT 3</div>
+                </div>
+                <div class="slides fade" id="slide4">
+                    <a class="remove" onclick="removeSlide(4)">X</a>
+                    <div class="text">TEXT 4</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <div style="text-align: center">
+                    <span class="dot" id="dot1" onclick="currentSlide(1)"></span>
+                    <span class="dot" id="dot2" onclick="currentSlide(2)"></span>
+                    <span class="dot" id="dot3" onclick="currentSlide(3)"></span>
+                    <span class="dot" id="dot4" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+        </div>
+        <div class="block">3</div>
+        <div class="block">4</div>
+        <div class="block">5</div>
+        <div class="block">6</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
